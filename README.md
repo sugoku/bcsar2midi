@@ -1,6 +1,9 @@
-# BCSAR_ExtractTools（Using batch to call other tools）
-## Useage
-## Extraction of bcsar
-Put the bcsar file under the folder，Run extract_bcsar.bat（Use Wii3DSUSoundTool Mingt be extracted error）
-If the extract is wrong, you can use it 3DSAudioRipper
-## （Description not completed）
+Just open the bat file and follow the instructions given. it's that easy!!!
+the programs used are as follows:
+-vgaudio
+-soneek's Wii3DSUSoundTool
+-sf2comp
+-cseq2midi
+Thanks!
+remember that this is a fork, so give the original tools some love too.
+(results may vary depending on the bcsar)
