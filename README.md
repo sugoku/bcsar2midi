@@ -1,5 +1,5 @@
 the folder must be on your desktop.
-you need to edit the bat files to include your usrname in the directory paths
+you need to edit the bat files to include your usrname in the directory paths.
 the programs used are as follows:
 -vgaudio
 -soneek's Wii3DSUSoundTool
