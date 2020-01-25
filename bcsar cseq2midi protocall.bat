@@ -6,16 +6,20 @@ PAUSE
 FOR %%C IN (*.bcseq) DO tools\cseq2midi.exe %%C
 FOR %%C IN (*.cseq) DO tools\cseq2midi.exe %%C
 DEL cseq2midi.log.txt
-cd C:\Users\Your username here\Desktop\bcsar2midi\tools
-VGAudioCli -b -i C:\Users\Your username here\Desktop\bcsar2midi\bcwav -o C:\Users\Your username here\Desktop\bcsar2midi --out-format wav
-cd C:\Users\Your username here\Desktop\bcsar2midi
+cd C:\Users\%USERNAME%\Desktop\bcsar2midi\bcwav
+FOR %%a IN (*.bcwav) DO tools\test.exe -o  "%%~na.wav" -L "%%a"
+move *.wav C:\Users\%USERNAME%\Desktop\bcsar2midi
+cd C:\Users\%USERNAME%\Desktop\bcsar2midi
 FOR %%C IN (*.txt) DO tools\sf2comp c "%%C"
+echo Pressing a key will delete all files used to create the midi files and soundfonts. (.txt,.bcseq,.cseq,.wav,.bcwav).
+PAUSE
 DEL *.txt
 DEL *.bcseq
+DEL *.cseq
 DEL *.wav
-cd C:\Users\Your username here\Desktop\bcsar2midi\bcwav
+cd C:\Users\%USERNAME%\Desktop\bcsar2midi\bcwav
 DEL *.bcwav
-echo The extraction process is complete! Make sure to edit the samples in the soundfont as they are not looped. Looping the samples will result in a higher quality rip. Thanks for using this tool!
+echo The extraction process is complete! Thanks for using this tool!
 PAUSE
 EXIT
 
