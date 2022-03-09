@@ -1,10 +1,17 @@
-the folder must be on your desktop.
-you need to edit the bat files to include your usrname in the directory paths.
-the programs used are as follows:
--vgaudio
--soneek's Wii3DSUSoundTool
--sf2comp
--cseq2midi
-Thanks!
-remember that this is a fork, so give the original tools some love too.
-(results may vary depending on the bcsar)
+# cia-to-bcsar-to-midisf2
+
+modified by @sugoku
+
+extracts bcsar from cia and then converts to MIDI and soundfont! just run `extract_bcsar_from_cia.bat` then `convert_bcsar_to_midisf2.bat` with filename arguments
+`batch.bat` will go through every cia, extract the bcsars, run the process and put them in a new folder with the same name as the bcsar minus the file extension
+
+the programs used:
+- vgaudio
+- soneek's Wii3DSUSoundTool
+- sf2comp
+- cseq2midi
+- ctrtool
+
+notes:
+- if it hangs, CTRL+C and when it asks to terminate batch processing, enter `n` (some sequences will cause this to happen)
+- do not add \*.txt or \*.bcsar files in this directory or they will get moved around
