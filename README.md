@@ -4,7 +4,7 @@ modified by @sugoku
 
 extracts bcsar from cia and then converts to MIDI and soundfont! just run `extract_bcsar_from_cia.bat` then `convert_bcsar_to_midisf2.bat` with filename arguments.
 
-`batch.bat` will go through every cia, extract the bcsars, run the process and put them in a new folder with the same name as the bcsar minus the file extension.
+`batch.bat` will go through every cia in the directory, extract the bcsars, run the process and put them in a new folder with the same name as the bcsar minus the file extension.
 
 you'll probably need to create a folder `bcwav` if it doesn't exist yet
 
